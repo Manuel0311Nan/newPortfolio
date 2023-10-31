@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playpen Sans', cursive;
+}
+body{
+    background-color: var(--color-Backg); 
+    /* background-image: url(./assets/globos.jpg) ;
+    background-size: cover; */
+}
+:root{
+    --color-Backg:#1E1E1E;
+    --color-menu:#454545;
+    --color-text:#FFFFFF;
+    --color-detail:#345e37;
+    --color-backg-image:#2E8B57;
+    --color-extra:#e0e0e0;
+    --fuente-Primary:'Playpen Sans', cursive;
+}
+.disappear{
+    display:none;
+}
+.navbar{
+    background-color: var(--color-menu);
+    padding: 15px;
+}
+.navbar_menu{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.navbar_text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--color-text);
+    padding: 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.navbar_text:hover{
+    background-color: var(--color-detail);
+    border-radius: 12px;
+}
+.navbar_link{
+    text-decoration: none;
+    color: var(--color-text);
+
+}
+.text_span{
+    font-size: small;
+}
+.bg-image{
+    background-image: url(https://res.cloudinary.com/manuelcodex/image/upload/v1688821217/manuel.alcazar_a_Valknut_logo_with_a_black_background_each_of_t_29acc2a5-483b-49f7-8fd5-ba2751df2699_qexuv3.png) ;
+    background-size: cover;
+}
+
+.mainTitle{
+    text-align: center;
+    margin: 2em auto 4em auto;
+    padding: 30px;
+    background-color: #1e1e1ebe;
+    color: var(--color-text);
+}
+.menuProjects{
+    display: flex;
+    flex-direction:row;
+    flex-flow: row wrap;
+    justify-content:center;
+    background-color:var(--color-menu);
+    color:var(--color-text);
+}
+.div-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid var(--color-Backg);
+    border-radius: 10px;
+    text-align: center;
+    margin: 1em;
+    width: 150px;
+    height: 150px;
+
+}
+.div-item:hover{
+    box-shadow: 5px 3px 10px 10px #345e37;
+    margin-top: 10px;
+}
+ img{
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+
+}
+img:hover{
+    cursor: pointer;
+}
+
+.div-item > h4{
+    position: absolute;
+    top: 50%; /* Alinea el texto verticalmente al centro */
+    left: 50%; /* Alinea el texto horizontalmente al centro */
+    transform: translate(-50%, -50%); /* Centra el texto */
+    background: rgba(0, 0, 0, 0.5); /* Fondo oscurecido con un valor alpha para la opacidad */
+    color: white; /* Color del texto */
+    padding: 10px; /* Espaciado alrededor del texto */
+    display: none;
+}
+#projects{
+    color: var(--color-text);
+    height: 100vh;
+    width: 100%;
+
+}
+.exposicion-con-fondo {
+    background-image: url('./assets/overcooked.jpg');
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el div */
+
+}
+
+.fondoDiv{
+    display: flex;
+ /* Centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+    height: 100vh;
+    background-color: rgba(5, 5, 5, 0.692);
+}
+
+.card-projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em 2em;
+    background-color: #4545458e;
+    padding: 20px; 
+    width: 100%; 
+    height: 60%;
+}
+.img-style{
+    padding: 20px;
+    background-color: var(--color-extra);
+    margin: 3px;
+
+}
+.stack-list{
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-top: 7px;
+}
+#experiencia img{
+    width: 90%;
+}
+#studies img{
+    width: 90%;
+}
+@media (max-width: 576px) {
+    .navbar_menu {
+        display: none;
+    }
+    .navbar_menu.open {
+        display: block;
+    }
+    .navbar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .navbar_menu.open {
+        max-height: 200px; /* Ajusta esto según el contenido de tu menú */
+    }
+    .menu-icon {
+        cursor: pointer;
+        padding: 20px;
+    }
+
+    .menu-icon div {
+        width: 35px;
+        height: 5px;
+        background-color: #333;
+        margin: 6px 0;
+        transition: 0.9s;
+    }
+
+    /* Estilos para el ícono de cerrar (X) */
+    #close-icon div:nth-child(1) {
+        transform: rotate(45deg) translate(7px, 7px);
+        transition: 0.9s;
+    }
+    #close-icon div:nth-child(2) {
+        transform: rotate(-45deg) translate(2px, -1px);
+    }
+
+}
