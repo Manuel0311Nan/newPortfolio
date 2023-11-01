@@ -87,3 +87,19 @@ function toggleMenu() {
         closeIcon.style.display = "none";
     }
 }
+document.addEventListener("DOMContentLoaded", function () {
+    const cambiarTemaButton = document.getElementById("cambiar-oscuro");
+    const themeStylesheet = document.getElementById("theme-stylesheet");
+  
+    let temaActual = "oscuro"; // Inicialmente, el tema es claro
+  
+    cambiarTemaButton.addEventListener("click", function () {
+      if (temaActual === "oscuro") {
+        themeStylesheet.href = "stylesClaro.css";
+        temaActual = "claro";
+      } else {
+        themeStylesheet.href = "stylesOscuro.css";
+        temaActual = "oscuro";
+      }
+    });
+  });
