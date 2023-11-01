@@ -4,6 +4,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const parrafoExposicion = document.getElementById("parrafo-exposicion");
     const stackList = document.getElementById("stack-list");
     const urlProj = document.getElementById("url-project");
+    const seccionDestino = document.getElementById("projects");
+
 
     projectsItems.forEach((item) => {
         item.addEventListener("click", () => {
@@ -12,10 +14,10 @@ document.addEventListener("DOMContentLoaded", function () {
             const stackImages = item.querySelectorAll(".stackImage");
             const url = item.querySelector("a");
 
-
-
             tituloExposicion.textContent = titulo;
             parrafoExposicion.textContent = parrafo;
+
+            seccionDestino.scrollIntoView({behavior: "smooth"});
 
             stackList.innerHTML = '';
             urlProj.innerHTML= ''
@@ -36,6 +38,16 @@ document.addEventListener("DOMContentLoaded", function () {
             projects.classList.add("exposicion-con-fondo");
         });
     });
+
+
+    const btnVolver = document.getElementById("boton-desplazamiento");
+
+    btnVolver.addEventListener("click", function () {
+            const seccionVolver = document.getElementById("projectList");
+        
+            seccionVolver.scrollIntoView({behavior: "smooth"});
+        });
+
 
     const experienceItems = document.querySelectorAll(".div-experience");
     experienceItems.forEach((item) => {
