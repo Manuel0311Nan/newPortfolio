@@ -173,6 +173,7 @@ body{
     color: var(--color-text);
     text-decoration: none;
     transition:  0.9s;
+    margin-top: 15px;
 }
 .url-project:hover{
     transform: scale(1.2);
@@ -236,7 +237,7 @@ body{
     }
     .btn-desplazamiento{
         display: block;
-        margin-top: 5px;
+        margin-top: 15px;
         cursor: pointer;
         background-color: var(--color-detail);
         border: none;
