@@ -4,11 +4,6 @@
     box-sizing: border-box;
     font-family: 'Playpen Sans', cursive;
 }
-body{
-    background-color: var(--color-Backg); 
-    /* background-image: url(./assets/globos.jpg) ;
-    background-size: cover; */
-}
 :root{
     --color-Backg:#1E1E1E;
     --color-menu:#454545;
@@ -18,12 +13,30 @@ body{
     --color-extra:#e0e0e0;
     --fuente-Primary:'Playpen Sans', cursive;
 }
+body{
+    background-color: var(--color-Backg); 
+    /* background-image: url(./assets/globos.jpg) ;
+    background-size: cover; */
+}
+
 .disappear{
     display:none;
 }
 .navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     background-color: var(--color-menu);
     padding: 15px;
+}
+.title{
+    font-size: 35px;
+    margin: auto;
+    color: var(--color-backg-image);
+    transition: 1s;
+}
+.title:hover{
+    color: var(--color-detail);
 }
 .navbar_menu{
     display: flex;
@@ -90,13 +103,13 @@ body{
     box-shadow: 5px 3px 10px 10px #345e37;
     margin-top: 10px;
 }
- img{
+ .div-item img{
     width: 150px;
     height: 150px;
     border-radius: 10px;
 
 }
-img:hover{
+.div-item:hover{
     cursor: pointer;
 }
 
@@ -117,9 +130,8 @@ img:hover{
 
 }
 .exposicion-con-fondo {
-    background-image: url('./assets/overcooked.jpg');
-    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el div */
 
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el div */
 }
 
 .fondoDiv{
@@ -135,15 +147,17 @@ img:hover{
     flex-direction: column;
     align-items: center;
     margin: 1em 2em;
-    background-color: #4545458e;
     padding: 20px; 
-    width: 100%; 
+    width: 70%; 
     height: 60%;
 }
 .img-style{
+    width: 150px;
+    height: 125px;
     padding: 20px;
     background-color: var(--color-extra);
     margin: 3px;
+    border-radius: 10px;
 
 }
 .stack-list{
@@ -152,6 +166,15 @@ img:hover{
     flex-flow: row wrap;
     justify-content: center;
     margin-top: 7px;
+}
+.url-project{
+    color: var(--color-text);
+    text-decoration: none;
+    transition:  0.9s;
+}
+.url-project:hover{
+    transform: scale(1.4);
+    color: var(--color-extra);
 }
 #experiencia img{
     width: 90%;

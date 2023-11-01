@@ -3,16 +3,22 @@ document.addEventListener("DOMContentLoaded", function () {
     const tituloExposicion = document.getElementById("titulo-exposicion");
     const parrafoExposicion = document.getElementById("parrafo-exposicion");
     const stackList = document.getElementById("stack-list");
+    const urlProj = document.getElementById("url-project");
 
     projectsItems.forEach((item) => {
         item.addEventListener("click", () => {
             const titulo = item.querySelector("h4").textContent;
             const parrafo = item.querySelector("p").textContent;
             const stackImages = item.querySelectorAll(".stackImage");
+            const url = item.querySelector("a");
+
+
 
             tituloExposicion.textContent = titulo;
             parrafoExposicion.textContent = parrafo;
+
             stackList.innerHTML = '';
+            urlProj.innerHTML= ''
 
             stackImages.forEach((img) => {
                 const imgElement = document.createElement("img");
@@ -20,6 +26,12 @@ document.addEventListener("DOMContentLoaded", function () {
                 imgElement.classList.add("img-style");
                 stackList.appendChild(imgElement);
             });
+
+            
+            urlProj.innerHTML = url;
+            urlProj.href = url.getAttribute('href');
+            urlProj.textContent = 'Accede a la web';
+
 
             projects.classList.add("exposicion-con-fondo");
         });
