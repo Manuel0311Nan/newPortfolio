@@ -8,7 +8,7 @@ const projectsListado = [
         stack: ["https://res.cloudinary.com/manuelcodex/image/upload/v1698778872/React_sna58t.png",
          "https://res.cloudinary.com/manuelcodex/image/upload/v1698778868/nodejs_znlsmq.png",
          "https://res.cloudinary.com/manuelcodex/image/upload/v1698778866/MongoDB_aiatn0.png"],
-        img: "https://res.cloudinary.com/manuelcodex/image/upload/v1698778070/osfcapture_ftdcvx.png",
+        img: "https://res.cloudinary.com/manuelcodex/image/upload/v1699530450/ONE_SECOND_FAITH_1_aek6hm.png",
         url:"https://osf-react.vercel.app/"
 
     },
@@ -19,7 +19,7 @@ const projectsListado = [
         stack: ["https://res.cloudinary.com/manuelcodex/image/upload/v1698778872/React_sna58t.png",
         "https://res.cloudinary.com/manuelcodex/image/upload/v1698778868/nodejs_znlsmq.png",
         "https://res.cloudinary.com/manuelcodex/image/upload/v1698778866/MongoDB_aiatn0.png"],
-        img: "https://res.cloudinary.com/manuelcodex/image/upload/v1692097205/CRY%40S/peliculasApp_fycl7w.png",
+        img: "https://res.cloudinary.com/manuelcodex/image/upload/v1699530450/CARTELERA_CINE_jju6iq.png",
         url:"https://peliculas-app-omega.vercel.app/home"
 
     },
@@ -30,18 +30,16 @@ const projectsListado = [
         stack: ["https://res.cloudinary.com/manuelcodex/image/upload/v1698778872/React_sna58t.png",
         "https://res.cloudinary.com/manuelcodex/image/upload/v1698778868/nodejs_znlsmq.png",
         "https://res.cloudinary.com/manuelcodex/image/upload/v1698778866/MongoDB_aiatn0.png"],
-        img: "https://res.cloudinary.com/manuelcodex/image/upload/v1698778153/cryoscapture_sudadr.png",
+        img: "https://res.cloudinary.com/manuelcodex/image/upload/v1699530658/CRYOS_WORLD_1_lwbofi.png",
         url:"https://cryos.cloud/"
 
     },
     {
         id: 4,
         title: "Arkanoid",
-        description: "Primer proyecto de videojuegos, típico Arkanoid",
-        stack: ["https://res.cloudinary.com/manuelcodex/image/upload/v1698778872/React_sna58t.png",
-        "https://res.cloudinary.com/manuelcodex/image/upload/v1698778868/nodejs_znlsmq.png",
-        "https://res.cloudinary.com/manuelcodex/image/upload/v1698778866/MongoDB_aiatn0.png"],
-        img: "https://res.cloudinary.com/manuelcodex/image/upload/v1698792509/arkanoid_rztduf.png",
+        description: "Primer proyecto de videojuegos, típico Arkanoid. Sólo funciona en ordenador",
+        stack: ["https://res.cloudinary.com/manuelcodex/image/upload/v1699529983/phaserio-icon_i179ox.svg"],
+        img: "https://res.cloudinary.com/manuelcodex/image/upload/v1699529795/ARKANOID_1_yazad5.png",
         url:"https://arkanoid-weld.vercel.app/"
     },
 
@@ -51,7 +49,6 @@ const experienceList = [
         id: 1,
         title: "One second Faith",
         description: "Proyecto creado para un grupo de música, web sencilla donde podemos encontrar lógica básica con todos los conciertos y lo último de su música",
-        stack: ["https://res.cloudinary.com/manuelcodex/image/upload/v1688821217/manuel.alcazar_a_Valknut_logo_with_a_black_background_each_of_t_29acc2a5-483b-49f7-8fd5-ba2751df2699_qexuv3.png", "https://res.cloudinary.com/manuelcodex/image/upload/v1688821217/manuel.alcazar_a_Valknut_logo_with_a_black_background_each_of_t_29acc2a5-483b-49f7-8fd5-ba2751df2699_qexuv3.png", "https://res.cloudinary.com/manuelcodex/image/upload/v1688821217/manuel.alcazar_a_Valknut_logo_with_a_black_background_each_of_t_29acc2a5-483b-49f7-8fd5-ba2751df2699_qexuv3.png"],
         img: "https://res.cloudinary.com/manuelcodex/image/upload/v1688821217/manuel.alcazar_a_Valknut_logo_with_a_black_background_each_of_t_29acc2a5-483b-49f7-8fd5-ba2751df2699_qexuv3.png"
 
     },
@@ -59,7 +56,6 @@ const experienceList = [
         id: 2,
         title: "Api de Peliculas",
         description: "Proyecto que hace llamadas a una api de películas, listado completo de las películas y detalle",
-        stack: ["https://res.cloudinary.com/manuelcodex/image/upload/v1688821217/manuel.alcazar_a_Valknut_logo_with_a_black_background_each_of_t_29acc2a5-483b-49f7-8fd5-ba2751df2699_qexuv3.png", "https://res.cloudinary.com/manuelcodex/image/upload/v1688821217/manuel.alcazar_a_Valknut_logo_with_a_black_background_each_of_t_29acc2a5-483b-49f7-8fd5-ba2751df2699_qexuv3.png", "https://res.cloudinary.com/manuelcodex/image/upload/v1688821217/manuel.alcazar_a_Valknut_logo_with_a_black_background_each_of_t_29acc2a5-483b-49f7-8fd5-ba2751df2699_qexuv3.png"],
         img: "https://res.cloudinary.com/manuelcodex/image/upload/v1688821217/manuel.alcazar_a_Valknut_logo_with_a_black_background_each_of_t_29acc2a5-483b-49f7-8fd5-ba2751df2699_qexuv3.png"
 
     },
@@ -67,7 +63,6 @@ const experienceList = [
         id: 3,
         title: "Cryos Cloud",
         description: "Proyecto basado en un personaje creado por mí, CRYOS es una joven astronauta al que podemos dirigir en sus aventuras",
-        stack: ["https://res.cloudinary.com/manuelcodex/image/upload/v1688821217/manuel.alcazar_a_Valknut_logo_with_a_black_background_each_of_t_29acc2a5-483b-49f7-8fd5-ba2751df2699_qexuv3.png", "https://res.cloudinary.com/manuelcodex/image/upload/v1688821217/manuel.alcazar_a_Valknut_logo_with_a_black_background_each_of_t_29acc2a5-483b-49f7-8fd5-ba2751df2699_qexuv3.png", "https://res.cloudinary.com/manuelcodex/image/upload/v1688821217/manuel.alcazar_a_Valknut_logo_with_a_black_background_each_of_t_29acc2a5-483b-49f7-8fd5-ba2751df2699_qexuv3.png"],
         img: "https://res.cloudinary.com/manuelcodex/image/upload/v1688821217/manuel.alcazar_a_Valknut_logo_with_a_black_background_each_of_t_29acc2a5-483b-49f7-8fd5-ba2751df2699_qexuv3.png"
 
     },
@@ -75,7 +70,6 @@ const experienceList = [
         id: 4,
         title: "Arkanoid",
         description: "Primer proyecto de videojuegos, típico Arkanoid",
-        stack: ["https://res.cloudinary.com/manuelcodex/image/upload/v1688821217/manuel.alcazar_a_Valknut_logo_with_a_black_background_each_of_t_29acc2a5-483b-49f7-8fd5-ba2751df2699_qexuv3.png", "https://res.cloudinary.com/manuelcodex/image/upload/v1688821217/manuel.alcazar_a_Valknut_logo_with_a_black_background_each_of_t_29acc2a5-483b-49f7-8fd5-ba2751df2699_qexuv3.png", "https://res.cloudinary.com/manuelcodex/image/upload/v1688821217/manuel.alcazar_a_Valknut_logo_with_a_black_background_each_of_t_29acc2a5-483b-49f7-8fd5-ba2751df2699_qexuv3.png"],
         img: "https://res.cloudinary.com/manuelcodex/image/upload/v1688821217/manuel.alcazar_a_Valknut_logo_with_a_black_background_each_of_t_29acc2a5-483b-49f7-8fd5-ba2751df2699_qexuv3.png"
 
     },

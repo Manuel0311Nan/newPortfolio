@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: 'Playpen Sans', cursive;
     transition: 0.5s;
+    cursor: url(./assets/almuerzo-cohete.png);
 }
 :root{
     --color-Backg:#1E1E1E;
@@ -17,7 +18,9 @@
 body{
     background-color: var(--color-Backg); 
     /* background-image: url(./assets/globos.jpg) ;
-    background-size: cover; */
+    background-size: cover;
+    cursor: url(./assets/marcador.png),auto; */
+
 }
 
 .disappear{
@@ -174,6 +177,9 @@ body{
     text-decoration: none;
     transition:  0.9s;
     margin-top: 15px;
+    background-color: var(--color-backg-image);
+    border-radius: 10px;
+    padding: 5px;
 }
 .url-project:hover{
     transform: scale(1.2);

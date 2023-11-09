@@ -17,7 +17,9 @@
 body{
     background-color: var(--color-Backg); 
     /* background-image: url(./assets/globos.jpg) ;
-    background-size: cover; */
+    background-size: cover;
+     cursor: url(./assets/marcador-black.png),auto; */
+
 }
 
 .disappear{
@@ -99,9 +101,10 @@ body{
     width: 150px;
     height: 150px;
 
+
 }
 .div-item:hover{
-    box-shadow: 5px 3px 10px 10px #345e37;
+    box-shadow: 5px 3px 10px 10px #008469;
     margin-top: 10px;
 }
  .div-item img{
@@ -174,6 +177,9 @@ body{
     text-decoration: none;
     transition:  0.9s;
     margin-top: 15px;
+    background-color: var(--color-backg-image);
+    border-radius: 10px;
+    padding: 5px;
 }
 .url-project:hover{
     transform: scale(1.2);
