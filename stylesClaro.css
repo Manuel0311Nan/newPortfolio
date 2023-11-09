@@ -76,12 +76,22 @@ body{
 }
 
 .mainTitle{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     margin: 2em auto 4em auto;
     padding: 30px;
     background-color: var(--color-Backg);
     color: var(--color-text);
 }
+.main-photo{
+    width: 50%;
+    border-radius: 10px;
+
+}
+
 .menuProjects{
     display: flex;
     flex-direction:row;
@@ -208,7 +218,23 @@ body{
         justify-content: center;
         align-items: center;
     }
+    .mainTitle{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 2em auto 4em auto;
+        padding: 30px;
+        background-color: var(--color-Backg);
+        color: var(--color-text);
+    }
+    .main-photo{
+        width: 80%;
+        border-radius: 10px;
+        margin-top: 10px;
     
+    }
     .navbar_menu.open {
         max-height: 200px; /* Ajusta esto según el contenido de tu menú */
     }

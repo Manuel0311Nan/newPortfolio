@@ -77,12 +77,28 @@ body{
 }
 
 .mainTitle{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     margin: 2em auto 4em auto;
     padding: 30px;
     background-color: #1e1e1ebe;
     color: var(--color-text);
 }
+.main-text{
+    word-break: break-word;
+  line-break: normal;
+  hyphens: auto;
+  overflow-wrap: break-word;
+}
+.main-photo{
+    width: 50%;
+    border-radius: 10px;
+
+}
+
 .menuProjects{
     display: flex;
     flex-direction:row;
@@ -216,7 +232,23 @@ body{
         cursor: pointer;
         padding: 20px;
     }
+    .mainTitle{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 2em auto 4em auto;
+        padding: 30px;
+        background-color: var(--color-Backg);
+        color: var(--color-text);
+    }
+    .main-photo{
+        width: 80%;
+        border-radius: 10px;
+        margin-top: 10px;
 
+    }
     .menu-icon div {
         width: 35px;
         height: 5px;
