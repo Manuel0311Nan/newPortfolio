@@ -71,8 +71,9 @@ body{
     font-size: small;
 }
 .bg-image{
-    background-image: url(https://res.cloudinary.com/manuelcodex/image/upload/v1688821217/manuel.alcazar_a_Valknut_logo_with_a_black_background_each_of_t_29acc2a5-483b-49f7-8fd5-ba2751df2699_qexuv3.png) ;
-    background-size: cover;
+    /* background-image: url(https://res.cloudinary.com/manuelcodex/image/upload/v1688821217/manuel.alcazar_a_Valknut_logo_with_a_black_background_each_of_t_29acc2a5-483b-49f7-8fd5-ba2751df2699_qexuv3.png) ;
+    background-size: cover; */
+    background-color: var(--color-Backg);
 }
 
 .mainTitle{
@@ -110,21 +111,18 @@ body{
     margin: 1em;
     width: 150px;
     height: 150px;
-
-
 }
+
 .div-item:hover{
     box-shadow: 5px 3px 10px 10px #008469;
     margin-top: 10px;
+    cursor: pointer;
 }
  .div-item img{
     width: 150px;
     height: 150px;
     border-radius: 10px;
 
-}
-.div-item:hover{
-    cursor: pointer;
 }
 
 .div-item > h4{
@@ -136,6 +134,28 @@ body{
     color: white; /* Color del texto */
     padding: 10px; /* Espaciado alrededor del texto */
     display: none;
+}
+.div-experience{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid var(--color-Backg);
+    border-radius: 10px;
+    text-align: center;
+    margin: 1em;
+    width: 150px;
+    height: 150px;
+}
+.div-experience img{
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+
+}
+.div-experience:hover{
+    box-shadow: 5px 3px 10px 10px #008469;
+    margin-top: 10px;
+    cursor: pointer;
 }
 #projects{
     color: var(--color-text);
@@ -206,6 +226,33 @@ body{
 .btn-desplazamiento{
     display: none;
 }
+.divDos{
+    color: var(--color-text);
+
+    width: 100%;
+}
+.card-divDos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em auto;
+    padding: 20px; 
+    width: 70%; 
+    height: 20%;
+    border-radius: 10px;
+    background-color: var(--color-backg-image);
+}
+.title-divDos{
+   font-weight: 900;
+}
+.second-divDos{
+    display: flex;
+    align-items: center;
+}
+.imagen-divDos{
+    width: 20%;
+
+}
 @media (max-width: 576px) {
     .navbar_menu {
         display: none;
@@ -250,7 +297,9 @@ body{
         margin: 6px 0;
         transition: 0.9s;
     }
-
+.imagen-divDos{
+    display: none;
+}
     /* Estilos para el ícono de cerrar (X) */
     #close-icon div:nth-child(1) {
         transform: rotate(45deg) translate(7px, 7px);

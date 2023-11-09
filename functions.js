@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const stackList = document.getElementById("stack-list");
     const urlProj = document.getElementById("url-project");
     const seccionDestino = document.getElementById("projects");
-
+    const experienceContainer = document.getElementById("divDos");
 
     projectsItems.forEach((item) => {
         item.addEventListener("click", () => {
@@ -36,6 +36,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
             projects.classList.add("exposicion-con-fondo");
+            seccionDestino.style.display = 'block';
+            experienceContainer.style.display = 'none';
         });
     });
 
@@ -49,28 +51,28 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
 
-    const experienceItems = document.querySelectorAll(".div-experience");
-    experienceItems.forEach((item) => {
-        item.addEventListener("click", () => {
-            const titulo = item.querySelector("h4").textContent;
-            const parrafo = item.querySelector("p").textContent;
+    // const experienceItems = document.querySelectorAll(".div-experience");
+    // experienceItems.forEach((item) => {
+    //     item.addEventListener("click", () => {
+    //         const titulo = item.querySelector("h4").textContent;
+    //         const parrafo = item.querySelector("p").textContent;
 
-            tituloExposicion.textContent = titulo;
-            parrafoExposicion.textContent = parrafo;
-            //projects.classList.add("exposicion-con-fondo");
-        });
-    });
-    const studiesItems = document.querySelectorAll(".div-studies");
-    studiesItems.forEach((item) => {
-        item.addEventListener("click", () => {
-            const titulo = item.querySelector("h4").textContent;
-            const parrafo = item.querySelector("p").textContent;
+    //         tituloExposicion.textContent = titulo;
+    //         parrafoExposicion.textContent = parrafo;
+    //         //projects.classList.add("exposicion-con-fondo");
+    //     });
+    // });
+    // const studiesItems = document.querySelectorAll(".div-studies");
+    // studiesItems.forEach((item) => {
+    //     item.addEventListener("click", () => {
+    //         const titulo = item.querySelector("h4").textContent;
+    //         const parrafo = item.querySelector("p").textContent;
 
-            tituloExposicion.textContent = titulo;
-            parrafoExposicion.textContent = parrafo;
-            //projects.classList.add("exposicion-con-fondo");
-        });
-    });
+    //         tituloExposicion.textContent = titulo;
+    //         parrafoExposicion.textContent = parrafo;
+    //         //projects.classList.add("exposicion-con-fondo");
+    //     });
+    // });
 });
 function toggleMenu() {
     var navMenu = document.getElementById("navbar_menu");
