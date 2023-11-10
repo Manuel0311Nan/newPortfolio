@@ -85,29 +85,42 @@ const experienceList = [
 const studiosList = [
   {
     id: 1,
-    title: "One second Faith",
-    description:
-      "Proyecto creado para un grupo de música, web sencilla donde podemos encontrar lógica básica con todos los conciertos y lo último de su música",
+    title: "Bootcamp en Upgrade Hub",
+    description: [
+      "Lenguajes de programación utilizados: PHP, Javascript, Jquery, MySQL",
+      "Mantenimiento y desarrollo de nuevos avances para las webs de la empresa.",
+      "Matenimiento y gestión de las bases de datos, actualización de tarifas",
+    ],
     img: "https://res.cloudinary.com/manuelcodex/image/upload/v1688821217/manuel.alcazar_a_Valknut_logo_with_a_black_background_each_of_t_29acc2a5-483b-49f7-8fd5-ba2751df2699_qexuv3.png",
   },
   {
     id: 2,
-    title: "Api de Peliculas",
-    description:
-      "Proyecto que hace llamadas a una api de películas, listado completo de las películas y detalle",
+    title: "Bootcamp en Upgrade Hub",
+    description: [
+      "Lenguajes de programación utilizados: PHP, Javascript, Jquery, MySQL",
+      "Mantenimiento y desarrollo de nuevos avances para las webs de la empresa.",
+      "Matenimiento y gestión de las bases de datos, actualización de tarifas",
+    ],
     img: "https://res.cloudinary.com/manuelcodex/image/upload/v1688821217/manuel.alcazar_a_Valknut_logo_with_a_black_background_each_of_t_29acc2a5-483b-49f7-8fd5-ba2751df2699_qexuv3.png",
   },
   {
     id: 3,
-    title: "Cryos Cloud",
-    description:
-      "Proyecto basado en un personaje creado por mí, CRYOS es una joven astronauta al que podemos dirigir en sus aventuras",
+    title: "Bootcamp en Upgrade Hub",
+    description: [
+      "Lenguajes de programación utilizados: PHP, Javascript, Jquery, MySQL",
+      "Mantenimiento y desarrollo de nuevos avances para las webs de la empresa.",
+      "Matenimiento y gestión de las bases de datos, actualización de tarifas",
+    ],
     img: "https://res.cloudinary.com/manuelcodex/image/upload/v1688821217/manuel.alcazar_a_Valknut_logo_with_a_black_background_each_of_t_29acc2a5-483b-49f7-8fd5-ba2751df2699_qexuv3.png",
   },
   {
     id: 4,
-    title: "Arkanoid",
-    description: "Primer proyecto de videojuegos, típico Arkanoid",
+    title: "Bootcamp en Upgrade Hub",
+    description: [
+      "Lenguajes de programación utilizados: PHP, Javascript, Jquery, MySQL",
+      "Mantenimiento y desarrollo de nuevos avances para las webs de la empresa.",
+      "Matenimiento y gestión de las bases de datos, actualización de tarifas",
+    ],
     img: "https://res.cloudinary.com/manuelcodex/image/upload/v1688821217/manuel.alcazar_a_Valknut_logo_with_a_black_background_each_of_t_29acc2a5-483b-49f7-8fd5-ba2751df2699_qexuv3.png",
   },
 ];
@@ -149,10 +162,11 @@ const studiesDiv = document.getElementById("studies");
 
 experienciaDiv.addEventListener("click", function () {
   experienceContainer.innerHTML = "";
-
+  experienceContainer.style.display = "block";
   experienceList.forEach((experiencia) => {
     const proyectoDiv = document.createElement("div");
     proyectoDiv.className = "card-divDos";
+    projectsContainer.style.display = "none";
 
     const ulExperiencie = document.createElement("ul");
 
@@ -169,24 +183,37 @@ experienciaDiv.addEventListener("click", function () {
                 <img class="imagen-divDos" src="${experiencia.img}" alt="${experiencia.title}" />
             </div>
             `;
-    proyectoDiv.appendChild(ulExperiencie);
+    proyectoDiv.querySelector(".second-divDos").appendChild(ulExperiencie);
     experienceContainer.appendChild(proyectoDiv);
   });
   experienceContainer.style.display = "block";
   projectsContainer.style.display = "none";
 });
+
 studiesDiv.addEventListener("click", function () {
   experienceContainer.innerHTML = "";
+  experienceContainer.style.display = "block";
   studiosList.forEach((studio) => {
     const proyectoDiv = document.createElement("div");
     proyectoDiv.className = "card-divDos";
+    projectsContainer.style.display = "none";
+
+    const ulStudy = document.createElement("ul");
+
+    studio.description.forEach((study) => {
+        const liStudy = document.createElement("li");
+        liStudy.classList.add("li-divDos");
+        liStudy.textContent = study;
+        ulStudy.appendChild(liStudy);
+      });
     proyectoDiv.innerHTML = `
             <h2 class="title-divDos">${studio.title}</h2>
             <div class="second-divDos">
             <img class="imagen-divDos" src="${studio.img}" alt="${studio.title}" />
-            <p class="description-divDos">${studio.description}</p></div>
+            </div>
 
             `;
+    proyectoDiv.querySelector(".second-divDos").appendChild(ulStudy);
     experienceContainer.appendChild(proyectoDiv);
   });
   experienceContainer.style.display = "block";
