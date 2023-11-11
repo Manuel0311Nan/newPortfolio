@@ -200,6 +200,7 @@ const experienceContainer = document.getElementById("divDos");
 const projectsContainer = document.getElementById("projects");
 const studiesDiv = document.getElementById("studies");
 const contactDiv = document.getElementById("contact");
+const footerContainer = document.getElementById("footerScroll");
 
 experienciaDiv.addEventListener("click", function () {
   experienceContainer.innerHTML = "";
@@ -271,7 +272,7 @@ contactDiv.addEventListener("click", function () {
     proyectoDiv.className = "form-divDos";
     projectsContainer.style.display = "none";
 
-    experienceContainer.scrollIntoView({behavior: "smooth"});
+    footerContainer.scrollIntoView({behavior: "smooth"});
 
     proyectoDiv.innerHTML = `
     <label class="form-label" for="nombre">Nombre:</label>
