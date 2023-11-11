@@ -384,6 +384,9 @@ body{
         margin: 6px 0;
         transition: 0.9s;
     }
+    .card-projects{
+        height: 80%;
+    }
     .imagen-divDos{
         display: none;
     }
