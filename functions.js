@@ -49,30 +49,6 @@ document.addEventListener("DOMContentLoaded", function () {
         
             seccionVolver.scrollIntoView({behavior: "smooth"});
         });
-
-
-    // const experienceItems = document.querySelectorAll(".div-experience");
-    // experienceItems.forEach((item) => {
-    //     item.addEventListener("click", () => {
-    //         const titulo = item.querySelector("h4").textContent;
-    //         const parrafo = item.querySelector("p").textContent;
-
-    //         tituloExposicion.textContent = titulo;
-    //         parrafoExposicion.textContent = parrafo;
-    //         //projects.classList.add("exposicion-con-fondo");
-    //     });
-    // });
-    // const studiesItems = document.querySelectorAll(".div-studies");
-    // studiesItems.forEach((item) => {
-    //     item.addEventListener("click", () => {
-    //         const titulo = item.querySelector("h4").textContent;
-    //         const parrafo = item.querySelector("p").textContent;
-
-    //         tituloExposicion.textContent = titulo;
-    //         parrafoExposicion.textContent = parrafo;
-    //         //projects.classList.add("exposicion-con-fondo");
-    //     });
-    // });
 });
 function toggleMenu() {
     var navMenu = document.getElementById("navbar_menu");

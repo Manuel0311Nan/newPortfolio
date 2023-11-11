@@ -86,10 +86,16 @@ body{
     padding: 30px;
     background-color: var(--color-Backg);
     color: var(--color-text);
+    height: 50vh;
+    transition: 1s ease-in-out;
+}
+.mainTitle:hover{
+    transform: translateY(62px);
 }
 .main-photo{
-    width: 50%;
+    width: 30%;
     border-radius: 10px;
+    margin-left: 20px;
 
 }
 
@@ -172,7 +178,7 @@ body{
  /* Centrar verticalmente */
     justify-content: center; /* Centrar horizontalmente */
     height: 70vh;
-    background-color: rgba(5, 5, 5, 0.377)
+    background-color: var(--color-Backg)
 }
 
 .card-projects{
@@ -184,7 +190,7 @@ body{
     width: 70%; 
     height: 60%;
     border-radius: 10px;
-    background-color: #e6f5eaa2;
+    background-color: var(--color-menu)
 }
 .img-style{
     width: 150px;
@@ -205,20 +211,28 @@ body{
 .url-project{
     color: var(--color-text);
     text-decoration: none;
-    transition:  0.9s;
+    transition:  0.5s;
     margin-top: 15px;
-    background-color: var(--color-backg-image);
+    background-color: var(--color-detail);
+    border: 2px solid var(--color-detail);
     border-radius: 10px;
     padding: 5px;
 }
 .url-project:hover{
-    transform: scale(1.2);
+    background-color: var(--color-Backg);
+    border: 2px solid var(--color-backg-image);
 }
 #experiencia img{
     width: 90%;
 }
 #studies img{
     width: 90%;
+}
+#contact img{
+    width: 90%;
+}
+#titulo-exposicion{
+    font-weight: 900;
 }
 #parrafo-exposicion{
     text-align:justify;
@@ -234,24 +248,93 @@ body{
 .card-divDos{
     display: flex;
     flex-direction: column;
+    margin: 1em auto;
+    padding: 20px; 
+    width: 70%; 
+    height: 20%;
+    border-radius: 10px;
+    background-color: var(--color-menu);
+}
+
+.title-divDos{
+   font-weight: 900;
+   text-align: center;
+}
+.second-divDos{
+    display: flex;
+    align-items: center;
+}
+.second-divDos > ul {
+    list-style:none;
+    margin-left: 10px;
+}
+.li-divDos{
+    margin-bottom: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    border-bottom: 5px solid var(--color-backg-image);
+}
+.imagen-divDos{
+    width: 20%;
+}
+.form-divDos{
+    display: flex;
+    flex-direction: column;
     align-items: center;
     margin: 1em auto;
     padding: 20px; 
     width: 70%; 
     height: 20%;
     border-radius: 10px;
-    background-color: var(--color-backg-image);
+    background-color: var(--color-menu);
 }
-.title-divDos{
-   font-weight: 900;
+.form-label{
+    width: 90%;
+    text-align: center;
+    margin-top: 5px;
+    font-weight: 700;
 }
-.second-divDos{
+.form-input{
+    width: 90%;
+    text-align: center;
+    padding: 7px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 1px solid #ccc; /* Puedes ajustar esto según tus preferencias */
+    box-shadow: none; 
+}
+.form-textarea{
+    width: 90%;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 1px solid #ccc; /* Puedes ajustar esto según tus preferencias */
+    box-shadow: none; 
+}
+.form-button{
+    display: block;
+    margin-top: 15px;
+    cursor: pointer;
+    background-color: var(--color-detail);
+    border: 2px solid var(--color-menu);
+    border-radius: 10px;
+    padding: 10px;
+    color: var(--color-text);
+    transition: 0.5s;
+}
+.form-button:hover{
+    background-color: var(--color-menu);
+    border: 2px solid var(--color-backg-image);
+}
+.footer{
     display: flex;
+    flex-direction: column;
     align-items: center;
+    background-color: var(--color-menu)
 }
-.imagen-divDos{
-    width: 20%;
-
+.text-footer{
+    text-align: center;
+    color: var(--color-text);
 }
 @media (max-width: 576px) {
     .navbar_menu {
@@ -276,6 +359,9 @@ body{
         background-color: var(--color-Backg);
         color: var(--color-text);
     }
+    .mainTitle:hover{
+        transform: translateY(0px) translateX(0px);
+    }
     .main-photo{
         width: 80%;
         border-radius: 10px;
@@ -297,8 +383,28 @@ body{
         margin: 6px 0;
         transition: 0.9s;
     }
+    .card-projects{
+        height: 80%;
+    }
 .imagen-divDos{
     display: none;
+}
+.title-divDos{
+    font-size: medium;
+    font-weight: 600;
+ }
+ .second-divDos{
+     display: flex;
+     align-items: center;
+ }
+ .second-divDos > ul {
+     list-style:none;
+ }
+ .li-divDos{
+    margin-bottom: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    border-bottom: 5px solid var(--color-backg-image);
 }
     /* Estilos para el ícono de cerrar (X) */
     #close-icon div:nth-child(1) {
@@ -321,14 +427,15 @@ body{
         margin-top: 15px;
         cursor: pointer;
         background-color: var(--color-detail);
-        border: none;
+        border: 2px solid var(--color-menu);
         border-radius: 10px;
         padding: 10px;
         color: var(--color-text);
         transition: 0.5s;
     }
     .btn-desplazamiento:hover{
-        background-color: var(--color-backg-image);
+        background-color: var(--color-menu);
+        border: 2px solid var(--color-backg-image);
     }
 
 
