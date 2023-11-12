@@ -221,6 +221,7 @@ experienciaDiv.addEventListener("click", function () {
 
     proyectoDiv.innerHTML = `
             <h2 class="title-divDos">${experiencia.title}</h2>
+            <h2 class="title2-divDos">${experiencia.company}</h2>
             <div class="second-divDos">
                 <img class="imagen-divDos" src="${experiencia.img}" alt="${experiencia.title}" />
             </div>
@@ -252,6 +253,7 @@ studiesDiv.addEventListener("click", function () {
       });
     proyectoDiv.innerHTML = `
             <h2 class="title-divDos">${studio.title}</h2>
+            <h2 class="title2-divDos">${studio.school}</h2>
             <div class="second-divDos">
             <img class="imagen-divDos" src="${studio.img}" alt="${studio.title}" />
             </div>

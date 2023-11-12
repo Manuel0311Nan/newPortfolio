@@ -260,6 +260,10 @@ body{
    font-weight: 900;
    text-align: center;
 }
+.title2-divDos{
+    font-weight: 700;
+    text-align: center;
+}
 .second-divDos{
     display: flex;
     align-items: center;
@@ -393,6 +397,10 @@ body{
     font-size: medium;
     font-weight: 600;
  }
+ .title2-divDos{
+    font-size: medium;
+    font-weight: 400;
+}
  .second-divDos{
      display: flex;
      align-items: center;
