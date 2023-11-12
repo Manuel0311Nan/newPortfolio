@@ -42,7 +42,7 @@ const projectsListado = [
     id: 4,
     title: "Arkanoid",
     description:
-      "Primer proyecto de videojuegos con PhaserJs, en mi deseo de aprendizaje de crear diferentes historias, empecé a probar con Phaser la posibilidad de crear videojuegos. Videojuego sencillo basado en Arkanoid",
+      "Primer proyecto de videojuegos con PhaserJs, en mi deseo de aprendizaje de crear diferentes historias, empecé a probar con Phaser la posibilidad de crear videojuegos. Videojuego sencillo basado en Arkanoid. Sólo funciona en ordenador.",
     stack: [
       "https://res.cloudinary.com/manuelcodex/image/upload/v1699529983/phaserio-icon_i179ox.svg",
     ],
