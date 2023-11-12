@@ -18,9 +18,7 @@ const projectsListado = [
     description:
       "Proyecto que hace llamadas a www.themoviedb.org, contiene un listado actualizado diariamente de películas en cartelera con nota de la crítica. Dentro de cada película podemos encontrar el elenco de actores y su sinopsis",
     stack: [
-      "https://res.cloudinary.com/manuelcodex/image/upload/v1698778872/React_sna58t.png",
-      "https://res.cloudinary.com/manuelcodex/image/upload/v1698778868/nodejs_znlsmq.png",
-      "https://res.cloudinary.com/manuelcodex/image/upload/v1698778866/MongoDB_aiatn0.png",
+      "https://res.cloudinary.com/manuelcodex/image/upload/v1699794260/Angular_full_color_logo_crisbo.png",
     ],
     img: "https://res.cloudinary.com/manuelcodex/image/upload/v1699530450/CARTELERA_CINE_jju6iq.png",
     url: "https://peliculas-app-omega.vercel.app/home",

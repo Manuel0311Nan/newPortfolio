@@ -73,10 +73,10 @@ document.addEventListener("DOMContentLoaded", function () {
   
     cambiarTemaButton.addEventListener("click", function () {
       if (temaActual === "oscuro") {
-        themeStylesheet.href = "stylesClaro.css";
+        themeStylesheet.href = "styles/stylesClaro.css";
         temaActual = "claro";
       } else {
-        themeStylesheet.href = "stylesOscuro.css";
+        themeStylesheet.href = "styles/stylesOscuro.css";
         temaActual = "oscuro";
       }
     });
