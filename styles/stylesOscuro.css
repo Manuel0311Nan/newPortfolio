@@ -189,7 +189,7 @@ body{
     margin: 1em 2em;
     padding: 20px; 
     width: 70%; 
-    height: 60%;
+    height: 80%;
     border-radius: 10px;
     background-color: var(--color-menu)
 }
@@ -340,6 +340,30 @@ body{
  .text-footer{
     text-align: center;
     color: var(--color-text);
+}
+@media (min-width: 576px) and (max-width: 728px) {
+    .card-projects{
+        width: 90%;
+    }
+}
+@media (min-width: 1078px){
+.ordenCard{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto 5px;
+}
+#parrafo-exposicion{
+    width: 50%;
+    margin: auto 5px;
+    text-align: justify;
+}
+#stack-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 }
 @media (max-width: 576px) {
     .navbar_menu {
